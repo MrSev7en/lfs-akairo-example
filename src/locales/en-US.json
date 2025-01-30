@@ -1,0 +1,20 @@
+{
+  "messages": {
+    "welcome": "^7Hi, ^6%{userName}^7!",
+    "speed": {
+      "remember": "^7Remember not to exceed:",
+      "velocity": "^6100mph ^7inside pits!"
+    }
+  },
+  "commands": {
+    "not-found": "^1This command doesn't exists!",
+    "teleport": {
+      "not-found": "^7An user with username: ^1%{userName} ^7was not found!",
+      "success": {
+        "self": "^2Successfully teleported to: ^2%{userName}^7!",
+        "other": "^2%{userName} ^7was teleported to you!"
+      }
+    },
+    "repair": "^2Your vehicle was repaired successfully!"
+  }
+}

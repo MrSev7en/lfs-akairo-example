@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "rootDir": ".",
+    "outDir": "./dist",
+    "strict": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "paths": {
+      "#locales/*": ["./src/locales/*"],
+      "#modules/*": ["./src/modules/*"]
+    }
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["dist", "node_modules"]
+}
