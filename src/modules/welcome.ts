@@ -17,7 +17,7 @@ export class WelcomeModule extends Module {
     player.message(player.t('messages.welcome', { userName: player.userName }));
 
     player
-      .button('counter')
+      .button()
       .setStyle(() => ButtonStyle.ISB_DARK)
       .setTitle(() => String(player.get<number>('counter')))
       .setWidth(() => 25)
@@ -35,9 +35,9 @@ export class WelcomeModule extends Module {
           .setTop(() => 75),
       )
       .create()
-      .onUpdate(() => {
+      .onUpdate((button) => {
         if (player.get<number>('counter') > 20) {
-          player.button('counter').destroy();
+          button.destroy();
         }
       });
   }
