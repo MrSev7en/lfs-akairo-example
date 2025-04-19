@@ -36,7 +36,7 @@ export class WelcomeModule extends Module {
       )
       .create()
       .onUpdate((button) => {
-        if (player.get<number>('counter') > 5) {
+        if (player.get<number>('counter') > 20) {
           button.destroy();
         }
       });
@@ -52,7 +52,7 @@ export class WelcomeModule extends Module {
     for (const player of players.list) {
       const counter = player.get<number>('counter');
 
-      if (counter <= 5) {
+      if (counter <= 20) {
         player.set('counter', counter + 1);
       }
     }
