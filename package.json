@@ -13,16 +13,16 @@
     "copy": "npx cpy-cli \"./src/**/*.json\" \"./dist\""
   },
   "dependencies": {
-    "dotenv": "^16.4.7",
-    "lfs-akairo": "^0.0.6",
-    "node-insim": "^4.6.0"
+    "dotenv": "^16.5.0",
+    "lfs-akairo": "^0.0.13",
+    "node-insim": "^4.6.3"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
-    "@types/node": "^22.12.0",
+    "@types/node": "^22.14.1",
     "cpy-cli": "^5.0.0",
     "rimraf": "^6.0.1",
-    "tsup": "^8.3.6",
-    "typescript": "^5.7.3"
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.3"
   }
 }
