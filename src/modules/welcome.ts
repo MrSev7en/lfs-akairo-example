@@ -13,11 +13,11 @@ export class WelcomeModule extends Module {
 
   public async onPlayerJoin(player: Player) {
     player
-      .set('counter', 0)
+      .set('test.counter', 0)
       .message(player.t('messages.welcome', { userName: player.userName }))
       .button()
       .setStyle(() => ButtonStyle.ISB_DARK)
-      .setTitle(() => String(player.get('counter')))
+      .setTitle(() => String(player.get('test.counter')))
       .setWidth(() => 25)
       .setHeight(() => 25)
       .setLeft(() => 50)
@@ -25,7 +25,7 @@ export class WelcomeModule extends Module {
       .append((button) =>
         button
           .setStyle(() => ButtonStyle.ISB_DARK)
-          .setTitle(() => String(player.get('counter') + 1))
+          .setTitle(() => String(player.get('test.counter') + 1))
           .setWidth(() => 25)
           .setHeight(() => 25)
           .setLeft(() => 50)
@@ -33,7 +33,7 @@ export class WelcomeModule extends Module {
       )
       .create()
       .onUpdate((button) => {
-        if (player.get('counter') > 20) {
+        if (player.get('test.counter') > 20) {
           button.destroy();
         }
       });
@@ -47,10 +47,10 @@ export class WelcomeModule extends Module {
 
   public async everyOneSecond(players: Players) {
     for (const player of players.list.values()) {
-      const counter = player.get('counter');
+      const counter = player.get('test.counter');
 
       if (counter <= 20) {
-        player.set('counter', counter + 1);
+        player.set('test.counter', counter + 1);
       }
     }
   }

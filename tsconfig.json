@@ -12,7 +12,8 @@
     "resolveJsonModule": true,
     "paths": {
       "#locales/*": ["./src/locales/*"],
-      "#modules/*": ["./src/modules/*"]
+      "#modules/*": ["./src/modules/*"],
+      "#types/*": ["./src/types/*"]
     }
   },
   "include": ["**/*.ts"],

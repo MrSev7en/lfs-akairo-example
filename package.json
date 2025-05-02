@@ -4,7 +4,8 @@
   "type": "commonjs",
   "imports": {
     "#locales/*": "./dist/locales/*",
-    "#modules/*": "./dist/modules/*.js"
+    "#modules/*": "./dist/modules/*.js",
+    "#types/*": "./dist/types/*.js"
   },
   "scripts": {
     "build": "rimraf -rf ./dist && tsup --onSuccess=\"npm run copy\"",
@@ -14,7 +15,7 @@
   },
   "dependencies": {
     "dotenv": "^16.5.0",
-    "lfs-akairo": "^0.0.15",
+    "lfs-akairo": "^0.0.16",
     "node-insim": "^4.6.3"
   },
   "devDependencies": {
