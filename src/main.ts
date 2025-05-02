@@ -10,7 +10,9 @@ async function bootstrap(): Promise<void> {
   const akairo = new Akairo({
     prefix: '!',
     interval: 1000,
+    interface: 1000,
     flags: InSimFlags.ISF_MCI | InSimFlags.ISF_MSO_COLS,
+    filters: { userNameLowerCase: true },
   });
 
   akairo.loadModule(CarModule);
