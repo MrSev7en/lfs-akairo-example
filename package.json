@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "dotenv": "^16.5.0",
-    "lfs-akairo": "^0.0.16",
+    "lfs-akairo": "^0.0.17",
     "node-insim": "^4.6.3"
   },
   "devDependencies": {
